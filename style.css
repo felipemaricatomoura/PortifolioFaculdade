@@ -1,0 +1,160 @@
+/* Reset básico e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Efeito de rolagem suave para as âncoras */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Estilo do Cabeçalho e Menu */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed; /* Deixa o menu fixo no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+    .menu ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+/* Estilos das Seções */
+section {
+    padding: 80px 0; /* Espaçamento superior para não ficar atrás do menu fixo */
+    border-bottom: 1px solid #ddd;
+}
+
+    section:nth-of-type(even) {
+        background-color: #fff;
+    }
+
+    section h1, section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+#sobre h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilos específicos das seções */
+.formacao-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #333;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+/* Estilos do Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+    form label {
+        margin-bottom: 5px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    form button {
+        padding: 12px;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+        form button:hover {
+            background: #555;
+        }
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Query para responsividade em dispositivos móveis [cite: 102] */
+@media (max-width: 768px) {
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #sobre h1 {
+        font-size: 2rem;
+    }
+}
