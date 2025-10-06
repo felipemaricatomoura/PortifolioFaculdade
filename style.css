@@ -147,7 +147,7 @@ footer {
     color: #fff;
 }
 
-/* Media Query para responsividade em dispositivos móveis [cite: 102] */
+/* Media Query para responsividade em dispositivos móveis */
 @media (max-width: 768px) {
     .menu ul li {
         display: block;
